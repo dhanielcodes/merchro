@@ -1,0 +1,86 @@
+<div>
+    <Nav />
+    <div class="hero">
+        <img class="hero_banner" src="../../assets/images/banner.png" alt="">
+
+    </div>
+    <div class="user">
+
+        <div class="user_img">
+            <img src="../../assets/images/profile.png" alt="">
+        </div>
+        <div class="user_desc">
+            <h3>Wizkid</h3>
+            <p>Nike, Inc. is an American multinational corporation that is engaged in the design,<br> development, manufacturing, </p>
+        </div>
+        <div class="user_follow">
+            <img src="../../assets/icons/follow.svg" alt="">
+            <div>Follow</div>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="merch_tab">
+            <h3>
+                <img class="filter_nav" @click="openFilter = !openFilter" src="../../assets/icons/sort.svg" alt=""> COLLECTIONS
+            </h3>
+            <div>
+                <span>Sort by:</span> Most Recent <img class="dropdown" src="../../assets/icons/drop.svg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="side1" v-if="openFilter">
+                <div class="sect">
+                    <div class="active">All</div>
+                    <div>Starboy ‘18 </div>
+                    <div>Made in Lagos</div>
+                    <div>Merchro x Starboy</div>
+                    <div>On Sale</div>
+                </div>
+
+            </div>
+            <div class="merch">
+
+                <div class="merchs">
+                    <div class="merchs_item" v-for="item in 10" :key="item">
+                        <div class="tag">
+                            <div class="tag_item">
+                                <img src="../../assets/icons/heart.svg" alt="">
+                            </div>
+                            <div class="tag_item">
+                                <img src="../../assets/icons/bag.png" alt="">
+                            </div>
+
+                        </div>
+                        <img class="main-img" src="../../assets/images/merch-img.png" alt="">
+                        <div class="merchs_item_desc">
+                            <div>
+                                <p>Beige cross leather handbag</p>
+                                <span>Sold by Antonio Vak</span>
+                            </div>
+                            <b>$50</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="view_all">SHOW MORE</div>
+
+                <div class="connect">
+                    <div class="socials">
+                        <a href="">
+                            <img src="../../assets/icons/twitter2.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="../../assets/icons/instagram2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="title">Connect with wizkid</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <Footer/>
+</div>

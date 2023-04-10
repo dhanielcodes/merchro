@@ -1,0 +1,388 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+.hero_banner {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 50px
+}
+
+.user_img {
+    border-radius: 1000px;
+    overflow: hidden;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    transform: translateY(-50%)
+}
+
+.user_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.user_desc {
+    transform: translateY(-40%)
+}
+
+.user_desc h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.user_desc p {
+    font-size: 18px;
+    color: #898989;
+    letter-spacing: 1px;
+}
+
+.user_follow {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    background: #F1F1F1;
+    border: 1px solid #DEDEDE;
+    border-radius: 1000px;
+    padding: 8px 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.user_follow img {
+    margin-right: 10px;
+}
+
+
+/* TAB LINKS */
+
+.tab_links {
+    background: #F9F9F9;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.tab_links_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.tab_links_main a {
+    text-decoration: none;
+    color: #9D9DA6;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.tab_links_main a.router-link-exact-active {
+    color: black;
+    font-weight: 600;
+    background: #F3F3F4;
+}
+
+.tab_links_main div {
+    color: #D71B1B;
+}
+
+.main {
+    width: 90%;
+    margin: auto;
+}
+
+.merch_tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 70px auto;
+}
+
+.merch_tab h3 {
+    display: flex;
+    align-items: center;
+}
+
+.merch_tab h3 img {
+    display: block;
+    margin-right: 10px;
+    font-weight: 600;
+    color: #747474;
+}
+
+.merch_tab div {
+    cursor: pointer;
+}
+
+.merch_tab span {
+    color: #A7A7A7;
+}
+
+.merch_tab .filter_nav {
+    display: none;
+}
+
+.dropdown {
+    margin-left: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+}
+
+
+/* SECT TAGS */
+
+.container .sect div {
+    margin-bottom: 30px;
+    color: #B3B3B3;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.container .sect div.active {
+    color: black;
+}
+
+.connect {
+    margin: 100px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.connect .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.connect .title {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.300);
+}
+
+
+/* TOP MERCH & NEW MERCH & MERCH TYPE*/
+
+.merch {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.merchs {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+.merchs_item {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.merchs_item .main-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.merchs_item_desc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.merchs_item_desc p {
+    font-weight: 500;
+}
+
+.merchs_item_desc span {
+    font-size: 14px;
+    color: #CFCFCF;
+    font-weight: 400;
+}
+
+.merchs_item_desc b {
+    font-size: 22px;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+}
+
+.tag .tag_item {
+    padding: 10px;
+    background: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 1000px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.tag .tag_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bottom {}
+
+.view_all {
+    text-align: right;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #D71B1B;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+
+/*     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 13px; */
+
+@media screen and (max-width: 1300px) {
+    .merchs_item_desc p {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .merchs_item_desc span {
+        font-size: 10px;
+        color: #CFCFCF;
+        font-weight: 400;
+    }
+    .merchs_item_desc b {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .merchs_item_desc h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .merchs_item_desc {
+        flex-direction: column;
+    }
+    .merchs_item_desc p {
+        margin-bottom: 10px;
+    }
+    .merchs_item_desc b {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .tab_links {
+        display: none;
+    }
+    .container {
+        position: relative;
+    }
+    .side1 {
+        background-color: white;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid black;
+        padding-top: 20px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    .merchs {
+        margin-top: 20px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 35px;
+    }
+    .merch_tab .filter_nav {
+        display: block;
+    }
+    .merch_tab div {
+        font-size: 10px;
+    }
+    .dropdown {
+        margin-left: 10px;
+    }
+    .tag .tag_item {
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        margin: 0 2px;
+    }
+    .user_desc h3 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .user_desc p {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    .user_follow {
+        position: relative;
+        top: 0;
+        right: 0;
+        border-radius: 1000px;
+        padding: 8px 20px;
+        font-weight: 600;
+        justify-content: space-between;
+        width: 120px;
+        margin: auto
+    }
+    .user_follow div {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .hero {
+        height: 65vh;
+    }
+    .hero2 h1 {
+        font-size: 40px;
+    }
+    .hero_text {
+        display: none;
+    }
+}

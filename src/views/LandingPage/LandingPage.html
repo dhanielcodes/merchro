@@ -1,0 +1,149 @@
+<div>
+    <Nav />
+    <!-- <div class="hero">
+        <div class="hero_cover"></div>
+        <img class="hero_img" src="../../assets/images/hero-img.png" alt="">
+        <div class="hero_text">
+            <span>JUST IN</span>
+            <h1>
+                The Dave<br> Collection
+            </h1>
+        </div>
+    </div> -->
+    <div class="hero2">
+        <img class="hero_img2" src="../../assets/images/hero-img.png" alt="">
+        <div class="hero_text2">
+            <h1>
+                Welcome to merchro
+            </h1>
+            <button>Shop Merch</button>
+        </div>
+    </div>
+    <div class="tab_links">
+        <div class="tab_links_main">
+            <router-link to="/explore">Explore</router-link>
+            <router-link to="/creator/wizkid">Creators</router-link>
+            <router-link to="/brands">Brands</router-link>
+            <router-link to="/collections">Collections</router-link>
+            <div>Following</div>
+        </div>
+    </div>
+    <div class="top_merch">
+        <div>
+            <h1>Top Merch</h1>
+        </div>
+
+        <div class="top_merchs">
+
+            <router-link to="/product/mick" class="top_merchs_item" v-for="item in 4" :key="item">
+                <div class="tag">
+                    <div class="tag_item">
+                        <img src="../../assets/icons/heart.svg" alt="">
+                    </div>
+                    <div class="tag_item">
+                        <img src="../../assets/icons/bag.png" alt="">
+                    </div>
+
+                </div>
+                <img class="main-img" src="../../assets/images/merch-img.png" alt="">
+                <div class="top_merchs_item_desc">
+                    <div>
+                        <p>Beige cross leather handbag</p>
+                        <span>Sold by Antonio Vak</span>
+                    </div>
+                    <b>$50</b>
+                </div>
+            </router-link>
+        </div>
+        <div class="view_all">view all</div>
+
+    </div>
+    <div class="new_merch">
+        <div>
+            <h1>New Merch</h1>
+        </div>
+        <div class="new_merchs">
+            <router-link to="/product/mick" class="new_merchs_item" v-for="item in 4" :key="item">
+                <div class="tag">
+                    <div class="tag_item">
+                        <img src="../../assets/icons/heart.svg" alt="">
+                    </div>
+                    <div class="tag_item">
+                        <img src="../../assets/icons/bag.png" alt="">
+                    </div>
+
+                </div>
+                <img class="main-img" src="../../assets/images/merch-img.png" alt="">
+                <div class="new_merchs_item_desc">
+                    <div>
+                        <p>Beige cross leather handbag</p>
+                        <span>Sold by Antonio Vak</span>
+                    </div>
+                    <b>$50</b>
+                </div>
+            </router-link>
+        </div>
+        <div class="view_all">view all</div>
+
+    </div>
+    <div class="merch_type">
+        <div>
+            <h1>Merch Types</h1>
+        </div>
+
+        <div class="merch_types">
+            <div class="merch_types_item" v-for="item in 8" :key="item">
+                <img class="main-img" src="../../assets/images/stickers.png" alt="">
+                <div class="merch_types_item_desc">
+                    <div>
+                        <p>Shorts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view_all">view all</div>
+
+    </div>
+    <div class="top_creator">
+        <div>
+            <h1>Top Creators</h1>
+        </div>
+
+        <div class="top_creators">
+            <div class="top_creators_item" v-for="item in 5" :key="item">
+                <img class="main-img" src="../../assets/images/creator.png" alt="">
+                <h2 class="">
+                    OMAH LAY
+                </h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="more_section">
+        <div class="more_section_blank"></div>
+        <div class="more_section_desc">
+            <span>Author name</span>
+            <h1>
+                The best way to <br> wireframe a website
+            </h1>
+            <router-link to="/">Read More</router-link>
+        </div>
+    </div>
+    <div class="articles">
+        <div class="article" v-for="i in 2" :key="i">
+            <h2>Keys to writing copy that actually converts and sells users</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+            <router-link to="/">Read More</router-link>
+
+        </div>
+    </div>
+    <div class="news_letter">
+        <span>Yes! Send me personalized on selling and shopping on merchro</span>
+        <div class="news_letter_input">
+            <input type="email" required placeholder="Your email address">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <Footer/>
+</div>

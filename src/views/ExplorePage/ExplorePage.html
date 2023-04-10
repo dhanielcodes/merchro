@@ -1,0 +1,108 @@
+<div>
+    <Nav />
+
+    <div class="tab_links">
+        <div class="tab_links_main">
+            <router-link to="/explore">Explore</router-link>
+            <router-link to="/creator/wizkid">Creators</router-link>
+            <router-link to="/brands">Brands</router-link>
+            <router-link to="/collections">Collections</router-link>
+            <div>Following</div>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="merch_tab">
+            <h3>
+                <img class="filter_nav" @click="openFilter = !openFilter" src="../../assets/icons/sort.svg" alt=""> FILTER
+            </h3>
+            <div>
+                <span>Sort by:</span> Most Recent <img class="dropdown" src="../../assets/icons/drop.svg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="side1" v-if="openFilter">
+                <div class="section">
+                    <h3>CREATORS</h3>
+                    <div class="sect">
+                        <div class="cat">
+                            <img src="../../assets/icons/check.svg" alt="">
+                            <span>Brands</span>
+                        </div>
+                        <div class="cat">
+                            <img src="../../assets/icons/uncheck.svg" alt="">
+                            <span>Creators</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3>MERHCH TYPE</h3>
+                    <div class="sect">
+                        <div class="cat">
+                            <img src="../../assets/icons/check.svg" alt="">
+                            <span>Shirt</span>
+                        </div>
+                        <div class="cat">
+                            <img src="../../assets/icons/uncheck.svg" alt="">
+                            <span>Hoodie</span>
+                        </div>
+                        <div class="cat">
+                            <img src="../../assets/icons/uncheck.svg" alt="">
+                            <span>Cap</span>
+                        </div>
+                        <div class="cat">
+                            <img src="../../assets/icons/uncheck.svg" alt="">
+                            <span>Sneakers</span>
+                        </div>
+                        <div class="cat">
+                            <img src="../../assets/icons/uncheck.svg" alt="">
+                            <span>Watch</span>
+                        </div>
+                        <div class="cat">
+                            <img src="../../assets/icons/uncheck.svg" alt="">
+                            <span>Bag</span>
+                        </div>
+                        <div class="cat">
+                            <img src="../../assets/icons/uncheck.svg" alt="">
+                            <span>Sweat shirt</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="merch">
+
+                <div class="merchs">
+                    <router-link to="/product/mick" class="merchs_item" v-for="item in 10" :key="item">
+                        <div class="tag">
+                            <div class="tag_item">
+                                <img src="../../assets/icons/heart.svg" alt="">
+                            </div>
+                            <div class="tag_item">
+                                <img src="../../assets/icons/bag.png" alt="">
+                            </div>
+
+                        </div>
+                        <img class="main-img" src="../../assets/images/merch-img.png" alt="">
+                        <div class="merchs_item_desc">
+                            <div>
+                                <p>Beige cross leather handbag</p>
+                                <span>Sold by Antonio Vak</span>
+                            </div>
+                            <b>$50</b>
+                        </div>
+                    </router-link>
+                </div>
+                <div class="bottom">
+                    <span>Showing 10 of 50 Results</span>
+                    <div class="view_all">SHOW MORE</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <Footer/>
+</div>

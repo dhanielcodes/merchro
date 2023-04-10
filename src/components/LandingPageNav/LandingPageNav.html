@@ -1,0 +1,50 @@
+<div class="nav">
+    <div class="bar" :class="{open : open}" @click="open = true">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+    </div>
+    <img class="nav_logo" src="../../assets/icons/logo.svg" alt="">
+    <div class="nav_input nav_input1">
+        <img src="../../assets/icons/search-icon.svg" alt="">
+        <input type="text" placeholder="Search for merch, creator, brand...">
+    </div>
+    <div class="nav_other">
+        <div class="nav_cart">
+            <div class="nav_cart_number">2</div>
+            <img src="../../assets/icons/cart-icon.svg" alt="">
+        </div>
+        <div class="nav_cart">
+            <img src="../../assets/icons/like.svg" alt="">
+        </div>
+        <div class="avatar_cont">
+            <img class="avatar" src="../../assets/icons/avatar.png" alt="">
+        </div>
+    </div>
+
+
+    <div v-if="open" class="tab_links">
+        <div class="top">
+            <div class="bar">
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+            </div>
+            <img @click="open = false" class="close" src="../../assets/icons/close.svg" alt="">
+        </div>
+        <div class="tab_links_main">
+            <router-link to="/brands">Explore</router-link>
+            <router-link to="/creators">Creators</router-link>
+            <router-link to="/">Brands</router-link>
+            <router-link to="/collections">Collections</router-link>
+            <router-link to="/collections">Auctions</router-link>
+            <button>Log in</button>
+        </div>
+    </div>
+
+
+</div>
+<div class="nav_input nav_input2">
+    <img src="../../assets/icons/search-icon.svg" alt="">
+    <input type="text" placeholder="Search for merch, creator, brand...">
+</div>
